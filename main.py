@@ -48,8 +48,7 @@ for qwerty in range(0, 10):
 
     #Funktion der tager to punkter som input og beregner deres omvendte cosinus similaritet (Omvendt pga. den måde vi sorterer på, hvor mindre tal er tættere på hinanden)
     def CosDist(test_point, learning_point):
-        return -((np.dot(test_point[0:4], learning_point[0:4]) / (
-                    (np.sum(test_point[0:4]) ** 2) * (np.sum(learning_point[0:4]) ** 2)))))
+        return -((np.dot(test_point[0:4], learning_point[0:4]) / ((np.sum(test_point[0:4]) ** 2) * (np.sum(learning_point[0:4]) ** 2))))
 
 
     #Funktion der sorterer og gætter på, hvilket label et test punkt skal have. Også forklaret i rapporten.
